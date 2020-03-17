@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Easy
 {
-    public static class IsPalidrome
+    public static class IsIntPalidrome
     {
          public static bool isPalindrome(int x)
             {

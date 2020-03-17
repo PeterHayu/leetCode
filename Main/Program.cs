@@ -7,7 +7,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(IsPalidrome.isPalindrome(0));
+            Console.WriteLine(IsIntPalidrome.isPalindrome(0));
         }
     }
 }
