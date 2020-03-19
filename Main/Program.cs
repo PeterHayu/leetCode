@@ -7,7 +7,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(IsIntPalidrome.isPalindrome(0));
+            Console.WriteLine(RomanToInt.romanToInt("III"));
         }
     }
 }
