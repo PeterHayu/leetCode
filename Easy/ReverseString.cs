@@ -11,7 +11,7 @@ namespace Easy
         {
             Stack<char> charsStack = new Stack<char>();
             ArrayList list = new ArrayList();
-            StringBuilder builder = new StringBuilder();
+            //StringBuilder builder = new StringBuilder();
             int size;
 
 
