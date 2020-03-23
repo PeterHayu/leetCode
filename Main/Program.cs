@@ -7,7 +7,8 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(IsBracketValid.isBracketValid("()"));
+            Console.WriteLine(StrStr.strStr("a",
+"a"));
         }
     }
 }
