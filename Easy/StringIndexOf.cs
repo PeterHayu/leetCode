@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Easy
 {
-    public static class StrStr
+    public static class StringIndexOf
     {
         public static int strStr(string haystack, string needle)
         {

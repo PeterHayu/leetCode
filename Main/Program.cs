@@ -7,7 +7,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(StrStr.strStr("a",
+            Console.WriteLine(StringIndexOf.strStr("a",
 "a"));
         }
     }
