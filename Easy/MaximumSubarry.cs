@@ -14,7 +14,7 @@ namespace Easy
             int sum = nums[0], max = nums[0];
             for (int i = 1; i < nums.Length; i++)
             {
-                //if the previous element is positive or zero, we should add the element to increase sub array sum
+                //if the previous sum is positive or zero, we should add the previous max sum to increase sub array sum
                 if (sum >= 0)
                     sum += nums[i];
                 else
