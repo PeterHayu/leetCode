@@ -31,8 +31,8 @@ namespace Easy.Top_100.Tree
             {
                 var t = q.Dequeue();
                 var currentDepth = cur.Dequeue();
-                //         if(t!=null){
                 depth = currentDepth;
+
                 if (t.left == null && t.right == null)
                     return depth;
                 if (t.left == null)
@@ -51,8 +51,69 @@ namespace Easy.Top_100.Tree
                     cur.Enqueue(currentDepth + 1);
                     q.Enqueue(t.right);
                     cur.Enqueue(currentDepth + 1);
+                }         
+            }
+            return depth;
+        }
+
+        public static int MinDepthImproved(TreeNode root)
+        {
+            if (root == null)
+                return 0;
+            var q = new Queue<TreeNode>();
+            var cur = new Queue<int>();
+            q.Enqueue(root);
+            cur.Enqueue(1);
+            int depth = 0;
+            while (q.Count != 0)
+            {
+                var t = q.Dequeue();
+                var currentDepth = cur.Dequeue();
+                depth = currentDepth;
+
+                if (t.left == null && t.right == null)
+                    return depth;
+                if (t.left != null)
+                {
+                    q.Enqueue(t.left);
+                    cur.Enqueue(currentDepth + 1);
                 }
-                //}              
+                if (t.right != null)
+                {
+                    q.Enqueue(t.right);
+                    cur.Enqueue(currentDepth + 1);
+                }
+            }
+            return depth;
+        }
+
+        public static int MinDepthAnswer(TreeNode root)
+        {
+            if (root == null)
+                return 0;
+            var q = new Queue<TreeNode>();
+            q.Enqueue(root);
+            int depth = 1;
+            while (q.Count != 0)
+            {
+                var size = q.Count;
+                //instead of using another queue to track the current level,
+                //we can also use a for loop to ensure we finish the current level before moving to another level
+                for (int i = 0; i < size; i++)
+                {
+                    var t = q.Dequeue();
+                    if (t.left == null && t.right == null)
+                        return depth;
+                    if (t.left != null)
+                    {
+                        q.Enqueue(t.left);
+                    }
+                    if (t.right != null)
+                    {
+                        q.Enqueue(t.right);
+                    }
+                }
+                depth++;
             }
             return depth;
         }

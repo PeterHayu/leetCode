@@ -1,4 +1,5 @@
 ﻿using Easy;
+using Easy.Top_100;
 using Easy.Top_100.Tree;
 using System;
 
@@ -8,7 +9,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(SymmetricTree.SymmetricTreeRecursive(new TreeNode([1,2,2,3,4,4,3])));
+            Console.WriteLine(BuySellStock.MaxProfit(new int[] { 7, 6, 4, 3, 1 }));
         }
     }
 }
