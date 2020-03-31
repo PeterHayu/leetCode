@@ -33,7 +33,8 @@ namespace Easy.Top_100
         public static int SingleNumberXOR(int[] nums)
         {
             int x = 0;
-            for (int i = 0; i < nums.Length; i++) x ^= nums[i];
+            for (int i = 0; i < nums.Length; i++) 
+                x ^= nums[i];
             return x;
         }
     }
