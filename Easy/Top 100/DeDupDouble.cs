@@ -6,6 +6,7 @@ namespace Easy.Top_100
 {
     public static class DeDupDouble
     {
+        //in a array only one value is not duplicated, find out the value
         public static int SingleNumber(int[] nums)
         {
             var s = new HashSet<int>();
