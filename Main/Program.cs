@@ -9,7 +9,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(BuySellStock.MaxProfit(new int[] { 7, 6, 4, 3, 1 }));
+            Console.WriteLine(MaxSumNoAdjacent.Rob(new int[] { 1, 4, 1, 6, 5,7,0,9 }));
         }
     }
 }
