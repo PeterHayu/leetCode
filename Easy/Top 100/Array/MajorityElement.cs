@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace Easy.Top_100
 {
     public static class MajorityElement
     {
         public static int majorityElement(int[] nums)
         {
-            Array.Sort(nums);
+            System.Array.Sort(nums);
             return nums[(nums.Length) / 2];
         }
 
