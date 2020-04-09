@@ -11,7 +11,7 @@ namespace Easy.Top_100.Tree
         public static int MaxDepthRecursive(TreeNode root) {
             if (root == null)
                 return 0;
-            return Math.Max(MaxDepthRecursive(root.left), MaxDepthRecursive(root.right));
+            return Math.Max(MaxDepthRecursive(root.left), MaxDepthRecursive(root.right)) + 1;
         }
 
         //written with stack and iterative DFS
