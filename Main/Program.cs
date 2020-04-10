@@ -11,7 +11,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(FindDisappearNumber.FindDisappearedNumbersAns(new[] { 4, 3, 2, 7, 8, 2, 3, 1 }));
+            Console.WriteLine(FindUnsortedSubarray.findUnsortedSubarray2(new[] { 2, 6, 4, 8, 10, 9, 15 }));
         }
     }
 }
