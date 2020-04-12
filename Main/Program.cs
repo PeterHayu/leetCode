@@ -11,7 +11,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(FindUnsortedSubarray.findUnsortedSubarray2(new[] { 2, 6, 4, 8, 10, 9, 15 }));
+            Console.WriteLine(CountAndSay.countAndSay(6));
         }
     }
 }
