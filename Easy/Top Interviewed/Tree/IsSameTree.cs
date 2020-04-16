@@ -18,7 +18,7 @@ namespace Easy.Top_Interviewed.Tree
             //this is wrong - if two node equal we need to continue not return true
             /*      else
                        return true; */
-            return IsSameTree(p.left, q.left) && IsSameTree(p.right, q.right);
+            return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
         }
     }
 }

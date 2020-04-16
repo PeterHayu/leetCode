@@ -18,6 +18,7 @@ namespace Easy.Top_Interviewed.Tree
         {
             if (root == null)
                 return;
+            //create new list if no element in the list(current level) 
             if (lv >= l.Count)
                 l.Insert(0, new List<int>());
             Traverse(l, root.left, lv + 1);
