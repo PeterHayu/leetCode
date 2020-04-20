@@ -1,7 +1,7 @@
-﻿using Easy.Class
+﻿using Easy.Class;
 
 namespace Easy.Top_Interviewed.Tree
-{
+{ 
     public class LowetCommonAncestor
     {
         public TreeNode LowestCommonAncestorIterative(TreeNode root, TreeNode p, TreeNode q)
