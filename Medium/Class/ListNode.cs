@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Easy.Class
+namespace Medium.Class
 {
     public class ListNode
     {
