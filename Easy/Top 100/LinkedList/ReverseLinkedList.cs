@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Easy.Class;
 
 namespace Easy.Top_100.LinkedList
 {

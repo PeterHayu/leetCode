@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Easy.Class;
+
 
 namespace Easy.Top_Interviewed.Tree
 {

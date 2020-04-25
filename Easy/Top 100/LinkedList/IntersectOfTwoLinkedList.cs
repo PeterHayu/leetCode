@@ -1,5 +1,4 @@
-﻿using Easy.Class;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
 
 namespace Easy.Top_100.LinkedList

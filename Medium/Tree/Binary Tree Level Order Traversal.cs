@@ -1,5 +1,4 @@
-﻿using Medium.Class;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace Medium.Tree
