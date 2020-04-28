@@ -31,8 +31,10 @@ namespace Easy.Top_Interviewed.Tree
 
             if (left == "" && right == "")
                 return result;
+            //no need,just for clearity
             if (left == "")
                 return result + "()" + right;
+            //this needed
             if (right == "")
                 return result + "(" + left + ")";
             return result += "(" + left + ")" + "(" + right + ")";
