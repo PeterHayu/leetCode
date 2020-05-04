@@ -16,7 +16,7 @@ namespace Easy.Top_Interviewed.Tree
             //framework
             if (root == null)
                 return 0;
-            //found, do sth
+            //found, do sth. Sum path framework
             if (root.left == null && root.right == null && isLeft)
             {
                 return root.val;
