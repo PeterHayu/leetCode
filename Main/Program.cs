@@ -13,7 +13,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("pwwkew");
+            LongestPalindromeSubstring.LongestPalindrome("a");
  }
     }
 }
