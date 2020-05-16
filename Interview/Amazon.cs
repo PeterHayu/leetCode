@@ -81,7 +81,7 @@ namespace Interview
                 int left = i;
                 int right = Math.Min(i + k - 1, n - 1);
                 int temp;
-
+                //reverse template
                 while (left < right)
                 {
                     temp = arr[left];
