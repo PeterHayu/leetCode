@@ -9,7 +9,7 @@ namespace Main
         void reverse(int[] nums)
         {
             int left = 0;
-            int right = nums.length - 1;
+            int right = nums.Length - 1;
             while (left < right)
             {
                 // swap(nums[left], nums[right])
