@@ -13,7 +13,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            LongestPalindromeSubstring.LongestPalindrome("a");
+            Generate_Parentheses.GenerateParenthesis(1);
  }
     }
 }

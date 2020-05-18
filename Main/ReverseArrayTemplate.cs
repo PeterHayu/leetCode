@@ -19,4 +19,5 @@ namespace Main
                 left++; right--;
             }
         }
+    }
 }
