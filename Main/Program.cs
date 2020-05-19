@@ -13,7 +13,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Generate_Parentheses.GenerateParenthesis(1);
+            Binary_Seach_With_Rotation.Search(new int[] { 4, 5, 6, 7, 0, 1, 2 },0);
  }
     }
 }
