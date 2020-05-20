@@ -13,7 +13,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Binary_Seach_With_Rotation.Search(new int[] { 4, 5, 6, 7, 0, 1, 2 },0);
+            Combination_Sum.CombinationSum(new int[] { 2,3,6,7 },7);
  }
     }
 }
