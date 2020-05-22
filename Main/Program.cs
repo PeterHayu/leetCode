@@ -13,7 +13,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Combination_Sum.CombinationSum(new int[] { 2,3,6,7 },7);
+            Group_Anagrams.GroupAnagrams(new string[] {"eat", "tea", "tan", "ate", "nat", "bat"});
  }
     }
 }
