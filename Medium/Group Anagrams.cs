@@ -14,6 +14,7 @@ namespace Medium
             {
                 var c = str.ToCharArray();
                 Array.Sort(c);
+                //trap
                 var key = new string(c);
                 if (window.ContainsKey(key))
                     window[key].Add(str);

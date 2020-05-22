@@ -13,7 +13,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Group_Anagrams.GroupAnagrams(new string[] {"eat", "tea", "tan", "ate", "nat", "bat"});
+            Jump_Game.CanJump(new int[] {2, 3, 1, 1, 4});
  }
     }
 }
