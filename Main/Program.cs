@@ -13,7 +13,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Jump_Game.CanJump(new int[] {2, 3, 1, 1, 4});
+            MergeInterval.Merge(new int[][] { new int[] { 1, 4 }, new int[] { 0, 2 }, new int[] { 3, 5 } });
  }
     }
 }
