@@ -43,7 +43,7 @@ namespace Main
 public List<List<int>> subsets(int[] nums)
         {
             List<List<int>> list = new List<List<int>>();
-            Array.Sort(nums);
+            //Array.Sort(nums);
             backtrack(list, new List<int>(), nums, 0);
             return list;
         }

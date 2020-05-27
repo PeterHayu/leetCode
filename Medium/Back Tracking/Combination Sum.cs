@@ -23,6 +23,7 @@ namespace Medium
             }
             if (target < 0) return;
 
+            //i=start when you want to check the next element in recursion
             for (int i = start; i < candidates.Length; i++)
             {
                 path.Add(candidates[i]);
