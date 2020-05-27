@@ -5,6 +5,7 @@ using Easy.Top_100.LinkedList;
 using Easy.Top_100.Tree;
 using Easy.Top_Interviewed.Array;
 using Medium;
+using Medium.DP;
 using System;
 
 namespace Main
@@ -13,7 +14,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            MergeInterval.Merge(new int[][] { new int[] { 1, 4 }, new int[] { 0, 2 }, new int[] { 3, 5 } });
+            Min_Path_Sum.MinPathSum(new int[][] { new int[] { 1, 3, 1 }, new int[] { 1, 5, 1 }, new int[] { 4, 2, 1 } });
  }
     }
 }
