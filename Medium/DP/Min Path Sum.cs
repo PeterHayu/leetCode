@@ -33,7 +33,7 @@ namespace Medium.DP
 
         public static int MinPathSumImproved(int[][] grid)
         {
-            var dp = new int[grid[0].Length];
+            var dp = new int[grid.Length];
             dp[0] = grid[0][0];
             for (int a = 1; a < grid.Length; a++)
             {
