@@ -14,7 +14,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Min_Path_Sum.MinPathSum(new int[][] { new int[] { 1, 3, 1 }, new int[] { 1, 5, 1 }, new int[] { 4, 2, 1 } });
+            Sort_Color.SortColorsImproved(new int[] { 1, 2, 0});
  }
     }
 }
