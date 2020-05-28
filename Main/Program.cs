@@ -15,7 +15,8 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Subset.Subsets(new int[] { 1, 2, 0});
+            Word_Search.Exist(new char[][]  { new char[] { 'A', 'B','C', 'E' }, new char[] { 'S', 'F', 'C', 'S' }, new char[] { 'A', 'D', 'E', 'E' }},
+"ABCCED");
  }
     }
 }
