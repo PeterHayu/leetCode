@@ -15,8 +15,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Word_Search.Exist(new char[][]  { new char[] { 'A', 'B','C', 'E' }, new char[] { 'S', 'F', 'C', 'S' }, new char[] { 'A', 'D', 'E', 'E' }},
-"ABCCED");
+            Unique_Binary_Search_Tree.NumTrees(3);
  }
     }
 }
