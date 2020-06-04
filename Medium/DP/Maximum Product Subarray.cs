@@ -32,5 +32,40 @@ namespace Medium.DP
             }
             return result;
         }
+
+        public static int MaxProduct2(int[] nums)
+        {
+            if (nums.Length < 1)
+                return Int32.MinValue;
+            int result = Int32.MinValue;
+            int prod = 1;
+
+            //going forward to compare 
+            for (int i = 0; i < nums.Length; i++)
+            {
+                prod *= nums[i];
+                result = Math.Max(prod, result);
+                if (nums[i] == 0)
+                {
+                    //start from after 0
+                    prod = 1;
+                }
+            }
+            //reset product
+            prod = 1;
+            //going backward 
+            for (int i = nums.Length - 1; i >= 0; i--)
+            {
+                prod *= nums[i];
+                result = Math.Max(prod, result);
+                if (nums[i] == 0)
+                {
+                    //start from after 0
+                    prod = 1;
+                }
+            }
+
+            return result;
+        }
     }
 }
