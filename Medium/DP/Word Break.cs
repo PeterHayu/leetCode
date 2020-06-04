@@ -12,13 +12,6 @@ namespace Medium.DP
             var dp = new bool[s.Length + 1];
             dp[0] = true;
             var st = new HashSet<string>(wordDict);
-            public bool WordBreak(string s, IList<string> wordDict)
-            {
-                //dp: whether substring s [0,i] is contained in wordDict
-                var dp = new bool[s.Length + 1];
-                dp[0] = true;
-                var st = new HashSet<string>(wordDict);
-
                 for (int i = 1; i <= s.Length; i++)
                 {
                     for (int j = 0; j < i; j++)

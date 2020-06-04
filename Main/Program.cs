@@ -10,8 +10,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Word_Break.WordBreak("leetcode",
-new List<string> { "leet", "code" });
+            Maximum_Product_Subarray.MaxProduct(new int[] { -3,0,-2,4});
  }
     }
 }
