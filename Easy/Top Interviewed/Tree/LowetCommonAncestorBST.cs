@@ -2,7 +2,7 @@
 
 namespace Easy.Top_Interviewed.Tree
 { 
-    public class LowetCommonAncestor
+    public class LowetCommonAncestorBST
     {
         public TreeNode LowestCommonAncestorIterative(TreeNode root, TreeNode p, TreeNode q)
         {
