@@ -6,7 +6,7 @@ namespace Easy
 {
     public static class RemoveDuplicateWithinArray
     {
-        public static int removeDuplicates(int[] nums)
+        public static int RemoveDuplicatesfromSortedArray(int[] nums)
         {
             if (nums.Length == 0)
                 return 0;
