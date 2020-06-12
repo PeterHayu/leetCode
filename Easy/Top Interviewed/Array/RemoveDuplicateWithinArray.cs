@@ -19,6 +19,7 @@ namespace Easy
                     i++;
                 }
             }
+            //returning the new length
             return i + 1;
         }
     }
