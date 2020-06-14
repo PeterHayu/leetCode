@@ -10,8 +10,8 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            FindKLargest.FindKthLargest(new int[] { 3, 2, 1, 5, 6, 4 }, 
-2);
+            CoinChange.CoinChanges(new int[] {1,2,5 }, 
+11);
  }
     }
 }
