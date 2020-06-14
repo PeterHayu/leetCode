@@ -9,7 +9,7 @@ namespace Medium
         public static IList<IList<int>> CombinationSum(int[] candidates, int target)
         {
             var result = new List<IList<int>>();
-            Array.Sort(candidates);
+            System.Array.Sort(candidates);
             Backtrack(candidates, result, new List<int>(), target, 0);
             return result;
         }

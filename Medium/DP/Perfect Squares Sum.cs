@@ -10,7 +10,7 @@ namespace Medium.DP
         {
             //dp:  least number of perfect square numbers which sum to n.
             var dp = new int[n + 1];
-            Array.Fill(dp, Int32.MaxValue);
+            System.Array.Fill(dp, Int32.MaxValue);
             dp[0] = 0;
             for (int i = 1; i <= n; i++)
             {

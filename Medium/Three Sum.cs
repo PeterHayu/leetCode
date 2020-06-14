@@ -9,7 +9,7 @@ namespace Medium
         public IList<IList<int>> ThreeSum(int[] nums)
         {
             var list = new List<IList<int>>();
-            Array.Sort(nums);
+            System.Array.Sort(nums);
             for (int i = 0; i < nums.Length; i++)
             {
                 if (i + 1 == nums.Length - 1)

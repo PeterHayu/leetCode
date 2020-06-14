@@ -13,7 +13,7 @@ namespace Medium
             foreach (var str in strs)
             {
                 var c = str.ToCharArray();
-                Array.Sort(c);
+                System.Array.Sort(c);
                 //trap
                 var key = new string(c);
                 if (window.ContainsKey(key))
