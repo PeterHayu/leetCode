@@ -1,6 +1,7 @@
 ﻿using Medium;
 using Medium.Back_Tracking;
 using Medium.DP;
+using Medium.QuickSortSelect;
 using System;
 using System.Collections.Generic;
 
@@ -10,8 +11,8 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            CoinChange.CoinChanges(new int[] {1,2,5 }, 
-11);
+            TopKFrequentElements.TopKFrequent(new int[] { 1, 1, 1, 2, 2, 3 }, 
+2);
  }
     }
 }
