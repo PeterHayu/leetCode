@@ -6,6 +6,7 @@ namespace Medium.LinkedList
 {
     class Copy_List_with_Random_Pointer
     {
+        //1->1'->2->2'...
         public Node CopyRandomList(Node head)
         {
             if (head == null)
