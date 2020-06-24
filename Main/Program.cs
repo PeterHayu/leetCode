@@ -11,7 +11,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            TopKFrequentElements.TopKFrequent(new int[] { 1, 1, 1, 2, 2, 3 }, 
+            Bit_Manipulation_Counting_Bits.CountBits( 
 2);
  }
     }
