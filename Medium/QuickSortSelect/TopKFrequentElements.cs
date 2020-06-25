@@ -27,12 +27,15 @@ namespace Medium.QuickSortSelect
                 }
             }
 
-            //2, get all unique keys as an int array to perform partition and quick select
-            //var keys = new int[dic.Size()];
-            var ordered = dic.OrderByDescending(x => x.Value).ToDictionary(pair => pair.Key, pair => pair.Value);
+            //2, sort dictionary based on value, then by alphabetical order
+            var ordered = dic
+                .OrderByDescending(x => x.Value)
+                .ThenBy(y => y.Key)
+                .ToDictionary(pair => pair.Key, pair => pair.Value);
 
             var result = new int[k];
             int i = 0;
+            //grab top k element from sort result
             foreach (var o in ordered.Keys)
             {
                 if (i >= k)
