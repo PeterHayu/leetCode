@@ -6,7 +6,7 @@ namespace Medium
 {
     class ReorderDataInLog
     {
-        public string[] ReorderLogFiles(string[] logs)
+        public string[] ReorderLogFilesJava(string[] logs)
         {
             /*
             reimplementing 
@@ -14,7 +14,7 @@ namespace Medium
             if return ==1// values will be swapped.
             if return ==-1 //need to keep in same order        
             */
-            Array.Sort(logs, (s1, s2) => {
+            System.Array.Sort(logs, (s1, s2) => {
                 //split the title and the log part of the string logs
                 var split1 = s1.Split(" ", 2);
                 var split2 = s2.Split(" ", 2);
@@ -47,6 +47,52 @@ namespace Medium
                 }
             });
             return logs;
+        }
+
+        public string[] ReorderLogFiles(string[] logs)
+        {
+            {
+                /*
+                reimplementing 
+                if return ==0 // nothing will happen original order will be maintained.
+                if return ==1// values will be swapped.
+                if return ==-1 //need to keep in same order        
+                */
+
+                List<string> letterLog = new List<string>();
+                List<string> digitLogs = new List<string>(),
+                             result = new List<string>();
+
+                //split the original log into digit and letter logs
+                foreach (var log in logs)
+                    if (!Char.IsDigit(log[log.IndexOf(' ') + 1]))
+                        letterLog.Add(log);
+                    else
+                        digitLogs.Add(log);
+
+                //custom sorting for letter log only
+                letterLog.Sort((s1, s2) => {
+                    //split the index and the log part of the string logs
+                    var split1 = s1.Split(" ", 2);
+                    var split2 = s2.Split(" ", 2);
+
+                    // both letter-logs. If same compare the index
+                    int comp = split1[1].CompareTo(split2[1]);
+                    if (comp == 0) return split1[0].CompareTo(split2[0]);
+                    else return comp;
+
+                });
+
+                //add letter log first
+                foreach (var item in letterLog)
+                    result.Add(item);
+
+                //add digit log first
+                foreach (var item in digitLogs)
+                    result.Add(item);
+
+                return result.ToArray();
+            }
         }
     }
 }
