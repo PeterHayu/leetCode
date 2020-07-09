@@ -6,7 +6,7 @@ namespace Medium
 {
     public static class Spiral_Matrix
     {
-        public IList<int> SpiralOrder(int[][] matrix)
+        public static IList<int> SpiralOrder(int[][] matrix)
         {
             //n * m matrix
             var result = new List<int>();
