@@ -50,5 +50,30 @@ namespace Medium.Tree
 
             return result;
         }
+
+
+        public IList<IList<int>> ZigzagLevelOrderRecursive(TreeNode root)
+        {
+            var result = new List<IList<int>>();
+            Traverse(result, root, 0);
+            return result;
+        }
+
+        private void Traverse(List<IList<int>> result, TreeNode root, int level)
+        {
+            if (root == null)
+                return;
+
+            if (result.Count <= level)
+                result.Add(new List<int>());
+
+            if (level % 2 != 0)
+                result[level].Insert(0, root.val);
+            else
+                result[level].Add(root.val);
+
+            Traverse(result, root.left, level + 1);
+            Traverse(result, root.right, level + 1);
+        }
     }
 }
