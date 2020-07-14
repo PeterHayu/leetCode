@@ -18,14 +18,14 @@ namespace Medium.Tree
                 var lv = q.Count;
                 for (int i = 0; i < lv; i++)
                 {
-                    var t = q.Peek();
-                    //should not pop the parent when the current level is not finished
+                    var t = q.Dequeue();
+              
                     if (t.left != null)
                         q.Enqueue(t.left);
                     if (t.right != null)
                         q.Enqueue(t.right);
                     //pop the value when added
-                    subL.Add(q.Dequeue().val);
+                    subL.Add(t.val);
                 }
                 list.Add(subL);
             }
