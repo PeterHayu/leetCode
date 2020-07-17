@@ -6,7 +6,7 @@ namespace Medium
 {
     public static class WordLadder
     {
-        public int LadderLength(string beginWord, string endWord, IList<string> wordList)
+        public static int LadderLength(string beginWord, string endWord, IList<string> wordList)
         {
             //put all words into set to obtain constant retrival time
             var wordSet = new HashSet<string>(wordList);
