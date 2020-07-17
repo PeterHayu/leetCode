@@ -42,7 +42,7 @@ namespace Medium.Tree
             Connect(root.right);
         }
 
-        public Node Connect(Node root)
+        public Node ConnectBFS(Node root)
         {
             if (root == null)
                 return null;

@@ -11,8 +11,11 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Bit_Manipulation_Counting_Bits.CountBits( 
-2);
+            WordLadder.LadderLength("leet",
+"code",
+new List<string> { 
+"lest","leet","lose","code","lode","robe","lost" }
+);
  }
     }
 }
