@@ -1,5 +1,6 @@
 ﻿using Medium;
 using Medium.Back_Tracking;
+using Medium.Binary_Search;
 using Medium.DP;
 using Medium.QuickSortSelect;
 using System;
@@ -11,11 +12,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            WordLadder.LadderLength("leet",
-"code",
-new List<string> { 
-"lest","leet","lose","code","lode","robe","lost" }
-);
+            Find_Peak_Element.FindPeakElement(new int[] {1,2,3,1 });
  }
     }
 }
