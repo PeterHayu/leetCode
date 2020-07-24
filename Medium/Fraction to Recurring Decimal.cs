@@ -12,16 +12,14 @@ namespace Medium
                 return "-1"; // not existing
             if (numerator == 0)
                 return "0";
-
-            var positive = true;
-            // different side of 0
-            if (numerator * denominator < 0)
-            {
-                positive = false;
-            }
+            
+            
+            var positive = (long)numerator * (long)denominator > 0;
 
             var num = Math.Abs((long)numerator);
             var denum = Math.Abs((long)denominator);
+
+           
 
 
             // only deal with postive numbers
@@ -59,7 +57,7 @@ namespace Medium
                     var shortHand = result.Substring(0, pos);
                     shortHand = shortHand + "(" + result.Substring(pos) + ")";
 
-                    if (!positive) //&& shortHand[0] != '-'
+                    if (!positive) 
                     {
                         shortHand = "-" + shortHand;
                     }
@@ -71,7 +69,7 @@ namespace Medium
             }
 
 
-            if (!positive && result[0] != '-')
+            if (!positive)
             {
                 result += "-";
             }
