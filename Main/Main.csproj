@@ -6,6 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Easy\Easy.csproj" />
+    <ProjectReference Include="..\Hard\Hard.csproj" />
+    <ProjectReference Include="..\Interview\Interview.csproj" />
     <ProjectReference Include="..\Medium\Medium.csproj" />
   </ItemGroup>
 

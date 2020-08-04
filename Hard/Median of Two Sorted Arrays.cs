@@ -2,7 +2,7 @@
 
 namespace Hard
 {
-    public class Class1
+    public class Median_of_Two_Sorted_Arrays
     {
         public double FindMedianSortedArrays(int[] nums1, int[] nums2)
         {
