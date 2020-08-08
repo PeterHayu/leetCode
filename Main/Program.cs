@@ -1,4 +1,5 @@
 ﻿using Hard;
+using Medium.SlidingWindow;
 
 namespace Main
 {
@@ -6,7 +7,8 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            First_Missing_Positive.FirstMissingPositive(new int[] { 3,4,-1,1});
+            MinWordSubstring.MinWindow("aa",
+"aa");
  }
     }
 }
