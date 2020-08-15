@@ -29,5 +29,32 @@ namespace Easy.Top_100.DP.SubArray
             //always return the max profit of selling on last day because it > holding stock on last day
             return dp[prices.Length - 1, 0];
         }
+
+        //use variable instead of 2d array
+        public int MaxProfit2(int[] prices)
+        {
+            //dp: on day i, whether have stock on hand or not
+            //to reduce space complexity we use variable instead of 2d array
+            //var dp = new int[prices.Length,2];
+            //at day 0, if not having stock on hand, max profit is 0
+            var dp_i_0 = 0;
+            //at day 0, if have stock on hand, max profit is the buy price
+            var dp_i_1 = -prices[0];
+
+            for (int i = 1; i < prices.Length; i++)
+            {
+                int temp = dp_i_0;
+                //if we do not have stock on hand today, it can possibily be
+                //1, we do not have stock on hand yesterday and not selling it 
+                //2, we have stock on hand yesterday and sold it
+                dp_i_0 = Math.Max(dp_i_0, dp_i_1 + prices[i]);
+                //if we have stock on hand today, it can possibily be
+                //1,we have stock on hand yesterday and not selling it 
+                //2, we do not have stock on hand yesterday and buying it today
+                dp_i_1 = Math.Max(dp_i_1, dp_i_0 - prices[i]);
+            }
+            //always return the max profit of selling on last day because it > holding stock on last day
+            return dp_i_0;
+        }
     }
 }
