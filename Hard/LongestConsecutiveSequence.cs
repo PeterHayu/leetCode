@@ -6,7 +6,7 @@ namespace Hard
 {
     public static class LongestConsecutiveSequence
     {
-        public int LongestConsecutive(int[] nums)
+        public static int LongestConsecutive(int[] nums)
         {
             //convert array to set for O(1) lookup time
             var s = new HashSet<int>(nums);
