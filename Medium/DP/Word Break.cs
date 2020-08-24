@@ -28,5 +28,42 @@ namespace Medium.DP
                 }
                 return dp[s.Length];
             }
+
+        private static bool result2 = false;
+
+        public static bool WordBreak2(string s, IList<string> wordDict)
+        {
+            Helper(s, wordDict, new Dictionary<string, bool>());
+            return result2;
         }
+        //BFS
+        private static void Helper(string s, IList<string> wordDict, Dictionary<string, bool> memo)
+        {
+
+            //to save previous stored result and skip the recursion process
+            if (memo.ContainsKey(s))
+            {
+                return;
+            }
+
+            //base case
+            if (s.Length == 0)
+            {
+                result = true;
+                return;
+            }
+
+            //break the following string into substring
+            foreach (var w in wordDict)
+            {
+                if (s.StartsWith(w))
+                {
+                    var sub = s.Substring(w.Length);
+                    Helper(sub, wordDict, memo);
+                }
+            }
+
+            memo.Add(s, result);
+        }
+    }
 }
