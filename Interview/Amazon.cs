@@ -74,6 +74,9 @@ namespace Interview
             return longA;
         }
 
+        //this is to reverse every k elements
+        //for example: [1,2,3,4,5] k =2
+        //[2,1] [4,3] [5]
         public int[] ReverseSortedArrayInSizeK(int[] arr, int n, int k)
         {
             for (int i = 0; i < n; i += k)
