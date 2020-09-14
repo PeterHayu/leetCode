@@ -54,5 +54,19 @@ namespace Main
 
             return i;
         }
+
+
+        public void quickSort(int[] arr, int low, int high)
+        {
+            if (low < high)
+            {
+                /* pi is partitioning index, arr[pi] is now
+                   at right place */
+                int pi = Partition(arr, low, high);
+
+                quickSort(arr, low, pi - 1);  // Before pi
+                quickSort(arr, pi + 1, high); // After pi
+            }
+        }
     }
 }
