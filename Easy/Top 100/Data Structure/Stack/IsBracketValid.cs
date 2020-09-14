@@ -22,6 +22,8 @@ namespace Easy
                     st.Push('}');
                 else if (c == '[')
                     st.Push(']');
+                //condition 1: extra left bracket
+                //condtion 2: extra right bracket
                 else if (st.Count == 0 || st.Pop() != c )
                     return false;
             }
