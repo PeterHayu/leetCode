@@ -37,12 +37,12 @@ namespace Easy.Top_Interviewed.Tree
             if (left != -1 && right != -1)
             {
                 //this is the final comparison between the second smallest in smallest route, and the second smallest in the left and right subtree
-                return Math.Min(left, right);
+                return System.Math.Min(left, right);
             }
             else
             {
                 // this is to retrieve the second smallest in smallest route
-                return Math.Max(left, right);
+                return System.Math.Max(left, right);
             }
         }
     }

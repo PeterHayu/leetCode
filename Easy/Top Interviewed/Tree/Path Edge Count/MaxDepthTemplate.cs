@@ -12,7 +12,7 @@ namespace Easy.Top_Interviewed.Tree.Path
                 return 0;
             var left = MaxDepth(root.left);
             var right = MaxDepth(root.right);
-            return Math.Max(left, right) + 1;
+            return System.Math.Max(left, right) + 1;
         }
     }
 }

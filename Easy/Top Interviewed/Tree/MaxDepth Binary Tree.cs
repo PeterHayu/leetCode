@@ -9,7 +9,7 @@ namespace Easy.Top_Interviewed.Tree
         public int MaxDepth(TreeNode root) {
             if (root == null)
                 return 0;
-            return Math.Max(MaxDepth(root.left), MaxDepth(root.right)) + 1;
+            return System.Math.Max(MaxDepth(root.left), MaxDepth(root.right)) + 1;
         }
     }
 }

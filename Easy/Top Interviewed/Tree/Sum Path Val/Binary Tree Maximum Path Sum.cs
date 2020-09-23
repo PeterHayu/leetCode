@@ -23,14 +23,14 @@ namespace Easy.Top_Interviewed.Tree.Sum_Path_Val
             if (root == null)
                 return 0;
             //only sum up the positive 
-            var left = Math.Max(0, Traverse(root.left));
-            var right = Math.Max(0, Traverse(root.right));
+            var left = System.Math.Max(0, Traverse(root.left));
+            var right = System.Math.Max(0, Traverse(root.right));
             //compare the sum of all nodes on this path to the stored maximum sum
-            result = Math.Max(result, left + right + root.val);
+            result = System.Math.Max(result, left + right + root.val);
             //Console.WriteLine(result + " "+ (int)(left+right+root.val));
             //to make sure its going through a path not a branch. you have to choose either left or right, so we choose the max one
             //except for the root, because its the first layer of recursion
-            return Math.Max(left, right) + root.val;
+            return System.Math.Max(left, right) + root.val;
         }
 
     }

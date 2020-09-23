@@ -13,14 +13,14 @@ namespace Easy.Top_Interviewed.Tree
                 return true;
             var left = Height(root.left);
             var right = Height(root.right);
-            return Math.Abs(left - right) <= 1 && IsBalanced(root.left) && IsBalanced(root.right);
+            return System.Math.Abs(left - right) <= 1 && IsBalanced(root.left) && IsBalanced(root.right);
         }
 
         private int Height(TreeNode root)
         {
             if (root == null)
                 return 0;
-            return Math.Max(Height(root.left), Height(root.right)) + 1;
+            return System.Math.Max(Height(root.left), Height(root.right)) + 1;
         }
 
         public bool IsBalanced2(TreeNode root)
@@ -37,9 +37,9 @@ namespace Easy.Top_Interviewed.Tree
             int right = CheckBalanced(root.right);
             if (right == -1) return -1;
 
-            if (Math.Abs(left - right) > 1) return -1;
+            if (System.Math.Abs(left - right) > 1) return -1;
 
-            return Math.Max(left, right) + 1;
+            return System.Math.Max(left, right) + 1;
         }
     }
 }

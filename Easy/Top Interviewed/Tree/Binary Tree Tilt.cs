@@ -24,7 +24,7 @@ namespace Easy.Top_Interviewed.Tree
             int left = Sum(root.left);
             int right = Sum(root.right);
             //exclude this line, its the addtion of all node algorithm
-            tilt += Math.Abs(left - right);
+            tilt += System.Math.Abs(left - right);
 
             return root.val + left + right;
         }

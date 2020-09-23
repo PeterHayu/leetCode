@@ -27,10 +27,10 @@ namespace Easy.Top_Interviewed.Tree.Path
             var right = MaxDepth(root.right, root.val);
 
             //the path from node left + the path from node right
-            result = Math.Max(result, left + right);
+            result = System.Math.Max(result, left + right);
 
             if (root.val == val)
-                return Math.Max(left, right) + 1;
+                return System.Math.Max(left, right) + 1;
             return 0;
         }
     }

@@ -73,3 +73,4 @@ namespace Medium.SlidingWindow
             return maxLength == Int32.MaxValue ? "" : s.Substring(start, maxLength);
         }
     }
+}

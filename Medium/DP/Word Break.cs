@@ -49,7 +49,7 @@ namespace Medium.DP
             //base case
             if (s.Length == 0)
             {
-                result = true;
+                result2 = true;
                 return;
             }
 
@@ -63,7 +63,7 @@ namespace Medium.DP
                 }
             }
 
-            memo.Add(s, result);
+            memo.Add(s, result2);
         }
     }
 }

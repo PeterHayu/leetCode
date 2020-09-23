@@ -15,11 +15,11 @@ namespace Easy.Top_Interviewed.Tree
             int temp = 0;
             foreach (var child in root.children)
             {
-                temp = Math.Max(MaxDepth(child), max);
+                temp = System.Math.Max(MaxDepth(child), max);
                 if (temp > max)
                     max = temp;
             }
-            return Math.Max(max, temp) + 1;
+            return System.Math.Max(max, temp) + 1;
         }
 
         public int MaxDepthAns(Node root)
@@ -30,7 +30,7 @@ namespace Easy.Top_Interviewed.Tree
             int max = 0;
             foreach (var child in root.children)
             {
-                max = Math.Max(MaxDepthAns(child), max);
+                max = System.Math.Max(MaxDepthAns(child), max);
             }
             return max + 1;
         }
