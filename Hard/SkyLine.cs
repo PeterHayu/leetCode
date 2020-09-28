@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Hard
 {
@@ -40,6 +41,9 @@ namespace Hard
             });
 
             //have the sortedDictionary output the one with maxCount (priorityQueue usually output the smallest number, so we change its order)
+            //note we cannot use a linked list like prioirty queue
+            //although we also want the max value to be ouputed
+            //we remove elements in the queue when a specific end has reached, not when a new element is added
             var pq = new SortedDictionary<int, int>(Comparer<int>.Create((a, b) => (b - a)));
             pq.Add(0, 0);
             int maxHeight = 0;
