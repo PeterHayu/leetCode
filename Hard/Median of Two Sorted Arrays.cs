@@ -6,7 +6,7 @@ namespace Hard
     {
         public double FindMedianSortedArrays(int[] nums1, int[] nums2)
         {
-            //first, always made the nums1 the shortest array
+            //first, always made the nums1 the shorter array
             //if nums1 long then swap
             //because the longer array partition can be derive from shorter one
             if (nums1.Length > nums2.Length)
@@ -18,11 +18,11 @@ namespace Hard
 
             //we want to find a partition for both nums1 and nums2 in the middle
             //and the medium is either the 
-            //Max of the two from left of partition(odd, returning the middle number)
+            //Max of the two from left of partition(odd length, returning the middle number)
             //or the 
-            //Average of (Max of the two from the left of partition)
+            //Average of (Max twoof the two from the left of partition)
             //and the (Min of the two from the right of partition)
-            //(even, returning the average of two numbers in the middle)
+            //(even length, returning the average of two numbers in the middle)
             //only need to do binary search on the shorter array 
             int l = 0;
             int r = nums1.Length;
@@ -31,6 +31,7 @@ namespace Hard
 
             while (l <= r)
             {
+                //to ensure len(left_part)==len(right_part), we have the partion as the below
                 int partX = (l + r) / 2;
                 int partY = (combinedL + 1) / 2 - partX;
 

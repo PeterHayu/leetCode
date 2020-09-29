@@ -3,7 +3,7 @@ namespace Medium
 {
     public class Basic_Calculator_2
     {
-        public int Calculate(String s)
+        public int Calculate(string s)
         {
             int sum = 0;
             int tempSum = 0;

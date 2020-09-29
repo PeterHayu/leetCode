@@ -6,7 +6,7 @@ namespace Medium
 {
     public static class String_to_Integer__atoi_
     {
-        public static int MyAtoi(String str)
+        public static int MyAtoi(string str)
         {
             var i = 0;
             var sign = 1;
