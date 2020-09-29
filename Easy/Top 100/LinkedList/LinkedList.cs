@@ -6,6 +6,8 @@ namespace Easy
 {
     public static class LinkedList
     {
+        //note: l3 is pointing to result, result is the new list
+        //note: l3.next should be pointing to l1 and l2
         public static ListNode MergeTwoLists(ListNode l1, ListNode l2)
         {
             //creating two pointer pointing to a same new list with one element, 0

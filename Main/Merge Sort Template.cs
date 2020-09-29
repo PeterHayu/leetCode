@@ -18,6 +18,15 @@ namespace Main
             while (i1 < l1 && i2 < l2)
             {
                 result[i++] = nums1[i1] <= nums2[i2] ? nums1[i1++] : nums2[i2++];
+                /*
+                 * if (nums1[i1] <= nums2[i2])
+                 *  result[i] = nums[i1]
+                 *  i++; i1++
+                 * 
+                 * if(nums1[i1]> nums2[i2])
+                 *    result[i] = nums2[i2]
+                 *    i++; i2++  
+                 */
             }
 
             while (i1 < l1)
