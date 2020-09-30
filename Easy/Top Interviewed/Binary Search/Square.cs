@@ -8,23 +8,19 @@ namespace Easy.Top_Interviewed.Binary_Search
     {
         public int SqrtBinarySearch(int x)
         {
-            if (x == 0)
-                return 0;
-            int left = 1, right = x;
-            while (true)
+            var left = 1;
+            var right = x;
+            while (left <= right)
             {
-                int mid = left + (right - left) / 2;
-                if (mid > x / mid)
-                {
-                    right = mid - 1;
-                }
-                else
-                {
-                    if (mid + 1 > x / (mid + 1))
-                        return mid;
+                var mid = (right - left) / 2 + left;
+                if (mid == x / mid)
+                    return mid;
+                else if (mid < x / mid)
                     left = mid + 1;
-                }
+                else if (mid >= x / mid)
+                    right = mid - 1;
             }
+            return right;
         }
 
         public int MySqrtMath(int x) {

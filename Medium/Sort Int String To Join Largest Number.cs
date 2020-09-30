@@ -9,7 +9,7 @@ namespace Medium
         public string LargestNumber(int[] nums)
         {
             System.Array.Sort(nums, (a, b) => (b + "" + a).CompareTo(a + "" + b));
-            return (nums[0] == 0) ? "0" : String.Join("", nums);
+            return (nums[0] == 0) ? "0" : System.String.Join("", nums);
         }
     }
 }
