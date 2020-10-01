@@ -7,6 +7,7 @@ namespace Easy.Top_100.Tree
 {
     public static class MaxDepthOfLeaf
     {
+        //Maximum Depth of Binary Tree
         //this need to go down to depth, so should be DFS and can be written recursively
         public static int MaxDepthRecursive(TreeNode root) {
             if (root == null)

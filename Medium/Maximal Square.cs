@@ -31,7 +31,7 @@ namespace Medium
                 {
                     if (matrix[i][j] == '1')
                     {
-                        //dp[i][j] = Min(left,upper,diagonal left upper)
+                        //dp[i][j] = Min(left,upper,diagonal left upper), because a square is defined as left,up and leftup all 1s, given the current slot is 1 (4 1s form a square) 
                         dp[i, j] = Math.Min(dp[i - 1, j - 1], Math.Min(dp[i - 1, j], dp[i, j - 1])) + 1;
                         max = Math.Max(max, dp[i, j]);
                     }
