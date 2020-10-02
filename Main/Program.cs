@@ -1,5 +1,6 @@
 ﻿using Hard;
 using Medium.SlidingWindow;
+using Medium.String;
 
 namespace Main
 {
@@ -7,8 +8,8 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            MinWordSubstring.MinWindow("aa",
-"aa");
+            Expressive_Words.ExpressiveWords("heeellooo",
+new string[] { "helo" });
  }
     }
 }
