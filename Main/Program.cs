@@ -8,8 +8,8 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Expressive_Words.ExpressiveWords("heeellooo",
-new string[] { "helo" });
+            Count_Of_Smaller_Numbers_After_Self.CountSmaller(
+new int[] { 1, 1 });
  }
     }
 }
