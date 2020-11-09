@@ -9,6 +9,7 @@ namespace Main
         public int FindKthLargest(int[] nums, int k)
         {
             QuickSort(nums, 0, nums.Length - 1, k);
+            //quickSort(nums,0,nums.Length-1);
             return nums[nums.Length - k];
         }
 
@@ -20,6 +21,8 @@ namespace Main
                 // Recursively sort elements before 
                 // partition and after partition 
                 //usually would not change
+                //if we want to find kth smallest
+                //first condition will be (pi>k)
                 if (pi > nums.Length - k)
                     QuickSort(nums, low, pi - 1, k);
                 else if (pi < nums.Length - k)
@@ -28,6 +31,12 @@ namespace Main
                     return;
             }
         }
+
+        /* This function takes last element as pivot, places
+   the pivot element at its correct position in sorted
+    array, and places all smaller (smaller than pivot)
+   to left of pivot and all greater elements to right
+   of pivot */
 
         private int Partition(int[] nums, int low, int high)
         {
