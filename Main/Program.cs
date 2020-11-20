@@ -1,4 +1,4 @@
-﻿kh using Hard;
+﻿using Hard;
 using Medium.SlidingWindow;
 using Medium.String;
 
